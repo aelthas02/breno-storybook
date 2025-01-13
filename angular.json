@@ -3,5 +3,68 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "breno-storybook": {
+      "projectType": "library",
+      "root": "projects/breno-storybook",
+      "sourceRoot": "projects/breno-storybook/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/breno-storybook/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/breno-storybook/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/breno-storybook/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/breno-storybook/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/breno-storybook/.storybook",
+            "browserTarget": "breno-storybook:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/breno-storybook"
+            ],
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/breno-storybook/.storybook",
+            "browserTarget": "breno-storybook:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/breno-storybook"
+            ],
+            "outputDir": "storybook-static"
+          }
+        }
+      }
+    }
   }
 }

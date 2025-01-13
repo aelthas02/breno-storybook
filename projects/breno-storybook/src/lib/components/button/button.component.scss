@@ -1,0 +1,92 @@
+.btn-wrapper {
+  margin: 5px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 0px solid;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.primary {
+  background-color: orange;
+  color: black;
+}
+
+.secondary {
+  background-color: grey;
+  color: white;
+}
+
+.success {
+  background-color: green;
+  color: white;
+}
+
+.error {
+  background-color: red;
+  color: white;
+}
+
+.info {
+  background-color: blue;
+  color: white;
+}
+
+.width-fill {
+  width: 100%;
+}
+
+.loading {
+  width: 20px;
+  height: 20px;
+  border-color: grey;
+  border-style: solid;
+  border-width: 5px;
+  border-bottom-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulsating {
+  animation: pulse 1s infinite;
+  transition: transform 0.2s ease-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

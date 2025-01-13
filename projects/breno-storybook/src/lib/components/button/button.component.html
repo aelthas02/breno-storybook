@@ -1,0 +1,8 @@
+<div class="btn-wrapper">
+  <button class="btn" [ngClass]="[class, size]" [disabled]="disabled">
+    @if (loading) {
+    <span class="loading"></span>
+    }
+    {{ label }}
+  </button>
+</div>
