@@ -51,6 +51,16 @@
                 "defaultValue": "{\r\n  title: 'Button',\r\n  component: ButtonComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: { onClick: fn() },\r\n}"
             },
             {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<IconComponent>",
+                "defaultValue": "{\r\n  title: 'Icon',\r\n  component: IconComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {\r\n    icon: {\r\n      control: 'select',\r\n      options: icons,\r\n    },\r\n    color: { control: 'color' },\r\n    size: {\r\n      control: 'select',\r\n      options: [\r\n        'xs',\r\n        'default-xs',\r\n        'default-sm',\r\n        'default-md',\r\n        'default-l',\r\n        'default-xl',\r\n      ],\r\n    },\r\n  },\r\n}"
+            },
+            {
                 "name": "preview",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -69,6 +79,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'primary',\r\n  },\r\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    size: 'default-xl',\r\n    color: 'black',\r\n    icon: 'heart',\r\n  },\r\n}"
             },
             {
                 "name": "Secondary",
@@ -119,6 +139,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ButtonComponent>",
                 "file": "projects/breno-storybook/src/lib/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<IconComponent>",
+                "file": "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -219,6 +250,28 @@
                     "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: true,\r\n    class: 'primary',\r\n    size: 'width-fill',\r\n  },\r\n}"
                 }
             ],
+            "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<IconComponent>",
+                    "defaultValue": "{\r\n  title: 'Icon',\r\n  component: IconComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {\r\n    icon: {\r\n      control: 'select',\r\n      options: icons,\r\n    },\r\n    color: { control: 'color' },\r\n    size: {\r\n      control: 'select',\r\n      options: [\r\n        'xs',\r\n        'default-xs',\r\n        'default-sm',\r\n        'default-md',\r\n        'default-l',\r\n        'default-xl',\r\n      ],\r\n    },\r\n  },\r\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    size: 'default-xl',\r\n    color: 'black',\r\n    icon: 'heart',\r\n  },\r\n}"
+                }
+            ],
             "projects/breno-storybook/.storybook/preview.ts": [
                 {
                     "name": "preview",
@@ -247,6 +300,19 @@
                     "description": "",
                     "kind": 183
                 }
+            ],
+            "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<IconComponent>",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
             ]
         }
     },
@@ -261,6 +327,36 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

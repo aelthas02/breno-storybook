@@ -1,0 +1,68 @@
+@import "../../../../assets/icons/font-icons/bsb-icons.scss";
+
+@font-face {
+  font-family: "bsb-icons";
+  src: url("../../../../assets/icons/font-icons/bsb-icons.woff") format("woff"),
+    url("../../../../assets/icons/font-icons/bsb-icons.ttf") format("ttf");
+}
+
+.icon {
+  font-family: "bsb-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.xs {
+  font-size: pxToRem(6);
+}
+
+.default-xs .default-sm {
+  font-size: pxToRem(13);
+  font-size: pxToRem(13);
+}
+
+.default-md {
+  font-size: pxToRem(18);
+  font-size: pxToRem(18);
+}
+
+.default-l {
+  font-size: pxToRem(20);
+  font-size: pxToRem(20);
+}
+
+.default-xl {
+  font-size: pxToRem(24);
+  font-size: pxToRem(24);
+}
+
+.default-xxl {
+  font-size: pxToRem(32);
+  font-size: pxToRem(32);
+}
+
+.circle-xs {
+  display: flex;
+  font-size: pxToRem(10);
+}
+
+.circle-sm {
+  display: flex;
+  font-size: pxToRem(14);
+}
+
+.circle-md {
+  display: flex;
+  font-size: pxToRem(14);
+}
+
+.circle-l {
+  display: flex;
+  font-size: pxToRem(20);
+  text-align: center;
+}
