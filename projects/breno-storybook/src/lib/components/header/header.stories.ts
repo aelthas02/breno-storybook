@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { HeaderComponent } from './header.component';
-import { ColorsEnum } from '../../types';
 
 const meta: Meta<HeaderComponent> = {
   title: 'Header',
@@ -13,7 +12,7 @@ const meta: Meta<HeaderComponent> = {
 export default meta;
 type Story = StoryObj<HeaderComponent>;
 
-export const Title: Story = {
+export const Header: Story = {
   args: {
     label: 'Breno moreira - frontend developer',
     menuOptions: ['Experiences', 'Skills', 'Formation'],

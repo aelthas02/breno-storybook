@@ -11,6 +11,16 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "CustomImage",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/C4D03AQFxYFjWLLp4yQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1556458573668?e=1742428800&v=beta&t=2AaqfooxONKR4jORTmf8-_lNyzSO7f4PEEsK9DE0kSI',\r\n  },\r\n}"
+            },
+            {
                 "name": "Disabled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -49,6 +59,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
                 "defaultValue": "{\r\n  title: 'Button',\r\n  component: ButtonComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: { onClick: fn() },\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<CustomImageComponent>",
+                "defaultValue": "{\r\n  title: 'Custom Image',\r\n  component: CustomImageComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
             },
             {
                 "name": "meta",
@@ -208,6 +228,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<CustomImageComponent>",
+                "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<HeaderComponent>",
                 "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
                 "deprecated": false,
@@ -251,6 +282,28 @@
         ],
         "enumerations": [],
         "groupedVariables": {
+            "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts": [
+                {
+                    "name": "CustomImage",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/C4D03AQFxYFjWLLp4yQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1556458573668?e=1742428800&v=beta&t=2AaqfooxONKR4jORTmf8-_lNyzSO7f4PEEsK9DE0kSI',\r\n  },\r\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<CustomImageComponent>",
+                    "defaultValue": "{\r\n  title: 'Custom Image',\r\n  component: CustomImageComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+                }
+            ],
             "projects/breno-storybook/src/lib/components/button/button.stories.ts": [
                 {
                     "name": "Disabled",
@@ -460,6 +513,19 @@
                     "kind": 183
                 }
             ],
+            "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<CustomImageComponent>",
+                    "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
             "projects/breno-storybook/src/lib/components/header/header.stories.ts": [
                 {
                     "name": "Story",
@@ -651,6 +717,36 @@
             },
             {
                 "filePath": "projects/breno-storybook/src/lib/components/button/button.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CustomImage",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
