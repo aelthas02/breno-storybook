@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { IconComponent } from './bsb-icon.component';
-import { icons } from '../../../../types';
+import { Icons, IconSizes } from '../../../../types';
 
 const meta: Meta<IconComponent> = {
   title: 'Icon',
@@ -9,7 +9,7 @@ const meta: Meta<IconComponent> = {
   argTypes: {
     icon: {
       control: 'select',
-      options: icons,
+      options: Icons,
     },
     color: { control: 'color' },
     size: {

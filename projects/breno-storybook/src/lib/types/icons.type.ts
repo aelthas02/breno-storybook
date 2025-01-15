@@ -1,9 +1,15 @@
-export const icons = [
+export const Icons = [
   'heart-empty',
   'heart',
   'star-empty',
   'star',
   'attention',
   'ok',
-  'mail',
+  'mail-alt',
+  'cancel',
+  'github-circled',
+  'docs',
+  'menu',
+  'whatsapp',
+  'linkedin-squared',
 ];

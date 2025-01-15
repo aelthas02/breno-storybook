@@ -1,5 +1,10 @@
 <div class="btn-wrapper">
-  <button class="btn" [ngClass]="[class, size]" [disabled]="disabled">
+  <button
+    class="btn"
+    [ngClass]="size"
+    [disabled]="disabled || loading"
+    [ngStyle]="{ color: labelColor, background: buttonColor }"
+  >
     @if (loading) {
     <span class="loading"></span>
     }

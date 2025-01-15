@@ -8,5 +8,10 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aelthas02/breno-storybook.git#main"
+  }
 }
