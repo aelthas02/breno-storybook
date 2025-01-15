@@ -64,6 +64,16 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<UnorderedListComponent>",
+                "defaultValue": "{\r\n  title: 'Unordered List',\r\n  component: UnorderedListComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -94,16 +104,6 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Title example',\r\n  },\r\n}"
-            },
-            {
-                "name": "Primary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -129,6 +129,26 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'success',\r\n    buttonColor: ColorsEnum.GREEN,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
+            },
+            {
+                "name": "Title",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Title example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+            },
+            {
+                "name": "UnorderedList",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    stringList: ['Item 1 example', 'Item 2 example'],\r\n  },\r\n}"
             },
             {
                 "name": "WidthFill",
@@ -170,6 +190,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<TitleComponent>",
                 "file": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<UnorderedListComponent>",
+                "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -293,14 +324,36 @@
                     "defaultValue": "{\r\n  title: 'Title',\r\n  component: TitleComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
                 },
                 {
-                    "name": "Primary",
+                    "name": "Title",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Title example',\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Title example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<UnorderedListComponent>",
+                    "defaultValue": "{\r\n  title: 'Unordered List',\r\n  component: UnorderedListComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+                },
+                {
+                    "name": "UnorderedList",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    stringList: ['Item 1 example', 'Item 2 example'],\r\n  },\r\n}"
                 }
             ],
             "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts": [
@@ -361,6 +414,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<TitleComponent>",
                     "file": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<UnorderedListComponent>",
+                    "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -542,13 +608,43 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Primary",
+                "name": "Title",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
                 "filePath": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "UnorderedList",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",

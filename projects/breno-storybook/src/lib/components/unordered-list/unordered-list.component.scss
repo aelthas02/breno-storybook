@@ -1,0 +1,13 @@
+@import "../../assets/fonts/fonts.scss";
+
+.unordered-list-wrapper {
+  font-size: 24px;
+  font-family: $font-family;
+}
+
+li::marker {
+  color: #fbbb24;
+  font-size: 25px;
+  font-weight: bolder;
+  content: ">> ";
+}

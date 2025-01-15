@@ -13,7 +13,7 @@ const meta: Meta<TitleComponent> = {
 export default meta;
 type Story = StoryObj<TitleComponent>;
 
-export const Primary: Story = {
+export const Title: Story = {
   args: {
     label: 'Title example',
     color: ColorsEnum.BLACK,

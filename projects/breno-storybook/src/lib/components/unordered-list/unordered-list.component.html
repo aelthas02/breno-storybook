@@ -1,0 +1,7 @@
+<div class="unordered-list-wrapper" [ngStyle]="{ color: color }">
+  <ul>
+    @for(item of stringList; track $index){
+    <li>{{ item }}</li>
+    }
+  </ul>
+</div>
