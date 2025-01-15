@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { IconComponent } from './bsb-icon.component';
-import { Icons, IconSizes } from '../../../../types';
+import { ColorsEnum, Icons, IconSizes } from '../../../../types';
 
 const meta: Meta<IconComponent> = {
   title: 'Icon',
@@ -29,7 +29,7 @@ const meta: Meta<IconComponent> = {
 export const Primary: Story = {
   args: {
     size: 'default-xl',
-    color: 'black',
+    color: ColorsEnum.ORANGE,
     icon: 'heart',
   },
 };

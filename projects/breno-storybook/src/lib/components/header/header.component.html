@@ -1,0 +1,20 @@
+<div>
+  <div class="header-wrapper">
+    <span class="title" (click)="titleClick()">{{ label }}</span>
+    <bsb-icon
+      [icon]="isMenuOpen ? 'cancel' : 'menu'"
+      [size]="'default-xl'"
+      (click)="toggleMenu()"
+      class="icon"
+    ></bsb-icon>
+  </div>
+  @if(isMenuOpen) {
+  <div class="open-menu">
+    @for(menuOption of menuOptions; track $index) {
+    <div class="menu-option" (click)="optionClick(menuOption)">
+      <span>{{ menuOption }}</span>
+    </div>
+    }
+  </div>
+  }
+</div>
