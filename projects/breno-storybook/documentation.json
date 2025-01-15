@@ -118,7 +118,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    size: 'default-xl',\r\n    color: 'black',\r\n    icon: 'heart',\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    size: 'default-xl',\r\n    color: ColorsEnum.ORANGE,\r\n    icon: 'heart',\r\n  },\r\n}"
             },
             {
                 "name": "Secondary",
@@ -148,7 +148,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Breno moreira - frontend developer',\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Breno moreira - frontend developer',\r\n    menuOptions: ['Experiences', 'Skills', 'Formation'],\r\n  },\r\n}"
             },
             {
                 "name": "Title",
@@ -362,7 +362,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Breno moreira - frontend developer',\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Breno moreira - frontend developer',\r\n    menuOptions: ['Experiences', 'Skills', 'Formation'],\r\n  },\r\n}"
                 }
             ],
             "projects/breno-storybook/src/lib/components/title/title.stories.ts": [
@@ -428,7 +428,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    size: 'default-xl',\r\n    color: 'black',\r\n    icon: 'heart',\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    size: 'default-xl',\r\n    color: ColorsEnum.ORANGE,\r\n    icon: 'heart',\r\n  },\r\n}"
                 }
             ],
             "projects/breno-storybook/.storybook/preview.ts": [
