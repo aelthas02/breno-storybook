@@ -13,7 +13,6 @@ export class ButtonComponent {
   @Input() label: string | number = 'Button';
   @Input() disabled: boolean = false;
   @Input() loading: boolean = false;
-  @Input() class: ButtonClass = 'primary';
   @Input() size: ButtonSize = 'normal';
   @Input() buttonColor: ColorsEnum = ColorsEnum.ORANGE;
   @Input() labelColor: ColorsEnum = ColorsEnum.WHITE;

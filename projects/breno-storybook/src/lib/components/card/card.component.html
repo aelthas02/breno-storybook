@@ -1,0 +1,12 @@
+<div class="card-wrapper" [ngStyle]="isMobile ? {'width': '100%'} : {'max-width': maxWidth + 'px'}">
+  <div class="title-wrapper">
+    <span class="title">{{ title }}</span>
+    @if(isCloseEnabled) {
+    <bsb-icon [icon]="'cancel'" (click)="close()" [color]="ORANGE" [size]="'default-xl'" class="icon"></bsb-icon>
+    }
+  </div>
+  <div class="line"></div>
+  <div class="content">
+    <ng-content></ng-content>
+  </div>
+</div>

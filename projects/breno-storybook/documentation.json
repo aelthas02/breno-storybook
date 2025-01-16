@@ -11,6 +11,16 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "Card",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {},\r\n}"
+            },
+            {
                 "name": "Disabled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -18,7 +28,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: true,\r\n    loading: false,\r\n    class: 'primary',\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: true,\r\n    loading: false,\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
             },
             {
                 "name": "Error",
@@ -28,7 +38,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'error',\r\n    buttonColor: ColorsEnum.RED,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    buttonColor: ColorsEnum.RED,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
             },
             {
                 "name": "Header",
@@ -48,7 +58,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'info',\r\n    buttonColor: ColorsEnum.BLUE,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    buttonColor: ColorsEnum.BLUE,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
             },
             {
                 "name": "lg",
@@ -79,6 +89,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
                 "defaultValue": "{\r\n  title: 'Button',\r\n  component: ButtonComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: { onClick: fn() },\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<CardComponent>",
+                "defaultValue": "{\r\n  title: 'Card',\r\n  component: CardComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
             },
             {
                 "name": "meta",
@@ -168,7 +188,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'primary',\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
             },
             {
                 "name": "Primary",
@@ -188,7 +208,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'secondary',\r\n    buttonColor: ColorsEnum.LIGHT_GREY,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    buttonColor: ColorsEnum.LIGHT_GREY,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
             },
             {
                 "name": "sm",
@@ -201,6 +221,16 @@
                 "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'sm',\r\n  },\r\n}"
             },
             {
+                "name": "Subtitle",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Subtitle example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+            },
+            {
                 "name": "Success",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -208,7 +238,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'success',\r\n    buttonColor: ColorsEnum.GREEN,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    buttonColor: ColorsEnum.GREEN,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
             },
             {
                 "name": "Text",
@@ -219,16 +249,6 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\r\n  args: {\r\n    label: 'Text example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
-            },
-            {
-                "name": "Title",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Subtitle example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
             },
             {
                 "name": "Title",
@@ -258,7 +278,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'primary',\r\n    size: 'width-fill',\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    size: 'width-fill',\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
             },
             {
                 "name": "WidthFillLoading",
@@ -268,7 +288,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: true,\r\n    class: 'primary',\r\n    size: 'width-fill',\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: true,\r\n    size: 'width-fill',\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
             },
             {
                 "name": "xl",
@@ -309,6 +329,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ButtonComponent>",
                 "file": "projects/breno-storybook/src/lib/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<CardComponent>",
+                "file": "projects/breno-storybook/src/lib/components/card/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -394,6 +425,28 @@
         ],
         "enumerations": [],
         "groupedVariables": {
+            "projects/breno-storybook/src/lib/components/card/card.stories.ts": [
+                {
+                    "name": "Card",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {},\r\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<CardComponent>",
+                    "defaultValue": "{\r\n  title: 'Card',\r\n  component: CardComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+                }
+            ],
             "projects/breno-storybook/src/lib/components/button/button.stories.ts": [
                 {
                     "name": "Disabled",
@@ -403,7 +456,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: true,\r\n    loading: false,\r\n    class: 'primary',\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: true,\r\n    loading: false,\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
                 },
                 {
                     "name": "Error",
@@ -413,7 +466,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'error',\r\n    buttonColor: ColorsEnum.RED,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    buttonColor: ColorsEnum.RED,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
                 },
                 {
                     "name": "Info",
@@ -423,7 +476,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'info',\r\n    buttonColor: ColorsEnum.BLUE,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    buttonColor: ColorsEnum.BLUE,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
                 },
                 {
                     "name": "meta",
@@ -443,7 +496,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'primary',\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
                 },
                 {
                     "name": "Secondary",
@@ -453,7 +506,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'secondary',\r\n    buttonColor: ColorsEnum.LIGHT_GREY,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    buttonColor: ColorsEnum.LIGHT_GREY,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
                 },
                 {
                     "name": "Success",
@@ -463,7 +516,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'success',\r\n    buttonColor: ColorsEnum.GREEN,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    buttonColor: ColorsEnum.GREEN,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
                 },
                 {
                     "name": "WidthFill",
@@ -473,7 +526,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'primary',\r\n    size: 'width-fill',\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    size: 'width-fill',\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
                 },
                 {
                     "name": "WidthFillLoading",
@@ -483,7 +536,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: true,\r\n    class: 'primary',\r\n    size: 'width-fill',\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: true,\r\n    size: 'width-fill',\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
                 }
             ],
             "projects/breno-storybook/src/lib/components/header/header.stories.ts": [
@@ -614,7 +667,7 @@
                     "defaultValue": "{\r\n  title: 'Subtitle',\r\n  component: SubtitleComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
                 },
                 {
-                    "name": "Title",
+                    "name": "Subtitle",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
@@ -713,6 +766,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ButtonComponent>",
                     "file": "projects/breno-storybook/src/lib/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/card/card.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<CardComponent>",
+                    "file": "projects/breno-storybook/src/lib/components/card/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -872,7 +938,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Title",
+                "name": "Subtitle",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1039,6 +1105,36 @@
             },
             {
                 "filePath": "projects/breno-storybook/src/lib/components/button/button.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Card",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/card/card.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
