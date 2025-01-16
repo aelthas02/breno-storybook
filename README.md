@@ -1,16 +1,8 @@
-# BrenoStorybook
+# Breno Storybook
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
 
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### And was based on the following Design in [Figma](https://www.figma.com/design/jy9JeQ6Vbka6bm1qUcF1Rg/Portifolio?node-id=0-1&t=NeC8A54tiyllGFxG-1)
 
 ## Code scaffolding
 

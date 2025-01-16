@@ -11,6 +11,6 @@ import { ImgSizes } from '../../types';
 })
 export class CustomImageComponent {
   @Input() imgUrl: string =
-    'https://media.licdn.com/dms/image/v2/C4D03AQFxYFjWLLp4yQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1556458573668?e=1742428800&v=beta&t=2AaqfooxONKR4jORTmf8-_lNyzSO7f4PEEsK9DE0kSI';
+    'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8';
   @Input() size: ImgSizes = 'md';
 }

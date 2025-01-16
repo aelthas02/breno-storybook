@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { TitleComponent } from './title.component';
-import { ColorsEnum } from '../../types';
+import { ColorsEnum } from '../../../types';
 
 const meta: Meta<TitleComponent> = {
   title: 'Title',

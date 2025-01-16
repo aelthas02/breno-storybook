@@ -1,6 +1,6 @@
 import { NgClass, NgStyle } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { ColorsEnum } from '../../types';
+import { ColorsEnum } from '../../../types';
 
 @Component({
   selector: 'bsb-title',

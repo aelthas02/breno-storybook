@@ -11,16 +11,6 @@
     "miscellaneous": {
         "variables": [
             {
-                "name": "CustomImage",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/C4D03AQFxYFjWLLp4yQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1556458573668?e=1742428800&v=beta&t=2AaqfooxONKR4jORTmf8-_lNyzSO7f4PEEsK9DE0kSI',\r\n  },\r\n}"
-            },
-            {
                 "name": "Disabled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -41,6 +31,16 @@
                 "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'error',\r\n    buttonColor: ColorsEnum.RED,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
             },
             {
+                "name": "Header",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Breno moreira - frontend developer',\r\n    menuOptions: ['Experiences', 'Skills', 'Formation'],\r\n  },\r\n}"
+            },
+            {
                 "name": "Info",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -49,6 +49,26 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'info',\r\n    buttonColor: ColorsEnum.BLUE,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
+            },
+            {
+                "name": "lg",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'lg',\r\n  },\r\n}"
+            },
+            {
+                "name": "md",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'md',\r\n  },\r\n}"
             },
             {
                 "name": "meta",
@@ -68,7 +88,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<CustomImageComponent>",
-                "defaultValue": "{\r\n  title: 'Custom Image',\r\n  component: CustomImageComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+                "defaultValue": "{\r\n  title: 'Custom Image',\r\n  component: CustomImageComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'md',\r\n  },\r\n}"
             },
             {
                 "name": "meta",
@@ -84,21 +104,41 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<TitleComponent>",
-                "defaultValue": "{\r\n  title: 'Title',\r\n  component: TitleComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<UnorderedListComponent>",
                 "defaultValue": "{\r\n  title: 'Unordered List',\r\n  component: UnorderedListComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<SubtitleComponent>",
+                "defaultValue": "{\r\n  title: 'Subtitle',\r\n  component: SubtitleComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<TextComponent>",
+                "defaultValue": "{\r\n  title: 'Text',\r\n  component: TextComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {\r\n    label: 'Text example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/base-components/title/title.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<TitleComponent>",
+                "defaultValue": "{\r\n  title: 'Title',\r\n  component: TitleComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
             },
             {
                 "name": "meta",
@@ -151,6 +191,16 @@
                 "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'secondary',\r\n    buttonColor: ColorsEnum.LIGHT_GREY,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
             },
             {
+                "name": "sm",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'sm',\r\n  },\r\n}"
+            },
+            {
                 "name": "Success",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -161,20 +211,30 @@
                 "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: false,\r\n    class: 'success',\r\n    buttonColor: ColorsEnum.GREEN,\r\n    labelColor: ColorsEnum.WHITE,\r\n  },\r\n}"
             },
             {
-                "name": "Title",
+                "name": "Text",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
+                "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Breno moreira - frontend developer',\r\n    menuOptions: ['Experiences', 'Skills', 'Formation'],\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Text example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
             },
             {
                 "name": "Title",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
+                "file": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Subtitle example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+            },
+            {
+                "name": "Title",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/base-components/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -209,6 +269,36 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n    disabled: false,\r\n    loading: true,\r\n    class: 'primary',\r\n    size: 'width-fill',\r\n    buttonColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n  },\r\n}"
+            },
+            {
+                "name": "xl",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'xl',\r\n  },\r\n}"
+            },
+            {
+                "name": "xs",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'xs',\r\n  },\r\n}"
+            },
+            {
+                "name": "xxl",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'xxl',\r\n  },\r\n}"
             }
         ],
         "functions": [],
@@ -250,8 +340,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<TitleComponent>",
-                "file": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
+                "rawtype": "StoryObj<UnorderedListComponent>",
+                "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -261,8 +351,30 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<UnorderedListComponent>",
-                "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                "rawtype": "StoryObj<SubtitleComponent>",
+                "file": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<TextComponent>",
+                "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<TitleComponent>",
+                "file": "projects/breno-storybook/src/lib/components/base-components/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -282,28 +394,6 @@
         ],
         "enumerations": [],
         "groupedVariables": {
-            "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts": [
-                {
-                    "name": "CustomImage",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/C4D03AQFxYFjWLLp4yQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1556458573668?e=1742428800&v=beta&t=2AaqfooxONKR4jORTmf8-_lNyzSO7f4PEEsK9DE0kSI',\r\n  },\r\n}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<CustomImageComponent>",
-                    "defaultValue": "{\r\n  title: 'Custom Image',\r\n  component: CustomImageComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
-                }
-            ],
             "projects/breno-storybook/src/lib/components/button/button.stories.ts": [
                 {
                     "name": "Disabled",
@@ -398,6 +488,16 @@
             ],
             "projects/breno-storybook/src/lib/components/header/header.stories.ts": [
                 {
+                    "name": "Header",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Breno moreira - frontend developer',\r\n    menuOptions: ['Experiences', 'Skills', 'Formation'],\r\n  },\r\n}"
+                },
+                {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -406,38 +506,78 @@
                     "deprecationMessage": "",
                     "type": "Meta<HeaderComponent>",
                     "defaultValue": "{\r\n  title: 'Header',\r\n  component: HeaderComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
-                },
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts": [
                 {
-                    "name": "Title",
+                    "name": "lg",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
+                    "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Breno moreira - frontend developer',\r\n    menuOptions: ['Experiences', 'Skills', 'Formation'],\r\n  },\r\n}"
-                }
-            ],
-            "projects/breno-storybook/src/lib/components/title/title.stories.ts": [
+                    "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'lg',\r\n  },\r\n}"
+                },
+                {
+                    "name": "md",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'md',\r\n  },\r\n}"
+                },
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
+                    "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Meta<TitleComponent>",
-                    "defaultValue": "{\r\n  title: 'Title',\r\n  component: TitleComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+                    "type": "Meta<CustomImageComponent>",
+                    "defaultValue": "{\r\n  title: 'Custom Image',\r\n  component: CustomImageComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'md',\r\n  },\r\n}"
                 },
                 {
-                    "name": "Title",
+                    "name": "sm",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
+                    "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Title example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'sm',\r\n  },\r\n}"
+                },
+                {
+                    "name": "xl",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'xl',\r\n  },\r\n}"
+                },
+                {
+                    "name": "xs",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'xs',\r\n  },\r\n}"
+                },
+                {
+                    "name": "xxl",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    imgUrl:\r\n      'https://media.licdn.com/dms/image/v2/D4D03AQFCczwf5_zHpQ/profile-displayphoto-shrink_800_800/B4DZRwAFw9GUAc-/0/1737045859861?e=1742428800&v=beta&t=tv7rXiVTJFPY9sKfIyoshETWCU4MTJ55QqFhJi78ss8',\r\n    size: 'xxl',\r\n  },\r\n}"
                 }
             ],
             "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts": [
@@ -460,6 +600,72 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\r\n  args: {\r\n    stringList: ['Item 1 example', 'Item 2 example'],\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<SubtitleComponent>",
+                    "defaultValue": "{\r\n  title: 'Subtitle',\r\n  component: SubtitleComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+                },
+                {
+                    "name": "Title",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Subtitle example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<TextComponent>",
+                    "defaultValue": "{\r\n  title: 'Text',\r\n  component: TextComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {\r\n    label: 'Text example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+                },
+                {
+                    "name": "Text",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Text example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/base-components/title/title.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/title/title.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<TitleComponent>",
+                    "defaultValue": "{\r\n  title: 'Title',\r\n  component: TitleComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+                },
+                {
+                    "name": "Title",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/title/title.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Title example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
                 }
             ],
             "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts": [
@@ -539,19 +745,6 @@
                     "kind": 183
                 }
             ],
-            "projects/breno-storybook/src/lib/components/title/title.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<TitleComponent>",
-                    "file": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 183
-                }
-            ],
             "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts": [
                 {
                     "name": "Story",
@@ -559,6 +752,45 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<UnorderedListComponent>",
                     "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<SubtitleComponent>",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<TextComponent>",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/base-components/title/title.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<TitleComponent>",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/title/title.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -617,6 +849,96 @@
             },
             {
                 "filePath": "projects/breno-storybook/src/lib/components/base-components/iconography/icon/bsb-icon.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Title",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Text",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/base-components/title/title.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/base-components/title/title.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Title",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/base-components/title/title.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -730,7 +1052,17 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "CustomImage",
+                "name": "lg",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "md",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -741,6 +1073,46 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "sm",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "xl",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "xs",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "xxl",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -760,7 +1132,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "meta",
+                "name": "Header",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -770,43 +1142,13 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Title",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
-                "type": "type alias",
-                "linktype": "miscellaneous",
-                "linksubtype": "typealias",
-                "name": "Story",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
                 "name": "meta",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
-                "filePath": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Title",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/breno-storybook/src/lib/components/title/title.stories.ts",
+                "filePath": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
