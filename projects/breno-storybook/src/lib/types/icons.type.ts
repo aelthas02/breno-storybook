@@ -13,4 +13,7 @@ export const Icons = [
   'whatsapp',
   'linkedin-squared',
   'to-start',
+  'wrench',
+  'plus',
+  'keyboard',
 ];
