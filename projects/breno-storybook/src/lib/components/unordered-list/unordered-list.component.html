@@ -1,7 +1,8 @@
 <div class="unordered-list-wrapper" [ngStyle]="{ color: color }">
   <ul>
-    @for(item of stringList; track $index){
-    <li>{{ item }}</li>
+    @for(item of list; track $index){
+    <li>{{ item.item }}</li>
+    <span class="subitem"> {{ item.subitem }}</span>
     }
   </ul>
 </div>

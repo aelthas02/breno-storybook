@@ -10,6 +10,10 @@ import { ColorsEnum } from '../../types';
   styleUrls: ['./unordered-list.component.scss'],
 })
 export class UnorderedListComponent {
-  @Input() stringList: string[] = ['List item 1', 'List item 2', 'List item 3'];
+  @Input() list: { item: string; subitem?: string }[] = [
+    { item: 'List item 1' },
+    { item: 'List item 2' },
+    { item: 'List item 3' },
+  ];
   @Input() color: ColorsEnum = ColorsEnum.WHITE;
 }

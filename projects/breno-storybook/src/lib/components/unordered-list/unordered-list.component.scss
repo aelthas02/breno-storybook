@@ -5,9 +5,19 @@
   font-family: $font-family;
 }
 
+.subitem {
+  font-size: 20px;
+  font-family: $font-family;
+  color: #696969;
+}
+
 li::marker {
   color: #fbbb24;
   font-size: 25px;
   font-weight: bolder;
   content: ">> ";
+}
+
+li {
+  margin: 10px 0px;
 }
