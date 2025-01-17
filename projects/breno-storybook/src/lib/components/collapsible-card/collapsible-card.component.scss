@@ -1,0 +1,19 @@
+@import "../../assets/fonts/fonts.scss";
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-stripe {
+  cursor: pointer;
+}
+
+.title-stripe:hover {
+  color: #faf0e6;
+  background-color: #1c1c1c;
+}
+
+.list-content {
+  padding-left: 20px;
+}

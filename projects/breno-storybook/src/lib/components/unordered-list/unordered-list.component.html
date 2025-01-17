@@ -1,5 +1,20 @@
 <div class="unordered-list-wrapper" [ngStyle]="{ color: color }">
-  <ul>
+  @if(title) {
+  <div class="title-wrapper">
+    <bsb-icon [icon]="titleIcon" [color]="titleIconColor"></bsb-icon>
+    <bsb-text [label]="title" [color]="titleColor"></bsb-text>
+  </div>
+
+  }
+  <ul
+    [ngClass]="
+      title && titleIcon
+        ? 'left-gap-plus'
+        : title && !titleIcon
+        ? 'left-gap'
+        : ''
+    "
+  >
     @for(item of list; track $index){
     <li>{{ item.item }}</li>
     <span class="subitem"> {{ item.subitem }}</span>

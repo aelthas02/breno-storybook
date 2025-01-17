@@ -41,6 +41,16 @@
                 "defaultValue": "(args: any) => ({\r\n  props: args,\r\n  template: `\r\n  <bsb-card [title]=\"'Title example'\" [maxWidth]=\"500\" [isMobile]=\"true\" [isCloseEnabled]=\"false\" >\r\n   <span>Content example</span><br/>\r\n   <span>Content example</span><br/>\r\n   <span>Content example</span>\r\n  </bsb-card>`,\r\n})"
             },
             {
+                "name": "collapsibleCard",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {},\r\n}"
+            },
+            {
                 "name": "Disabled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -119,6 +129,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<CardComponent>",
                 "defaultValue": "{\r\n  title: 'Card',\r\n  component: CardComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<CollapsibleCardComponent>",
+                "defaultValue": "{\r\n  title: 'Collapsible Card Component',\r\n  component: CollapsibleCardComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
             },
             {
                 "name": "meta",
@@ -268,7 +288,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    backgroundColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n    label: 'Title example',\r\n    enableCredentialButton: true,\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    backgroundColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n    label: 'Reactive Angular course with RxJS',\r\n    enableCredentialButton: true,\r\n    credentialUrl:\r\n      'https://www.udemy.com/certificate/UC-88966ec3-1439-4d77-9b46-6e638fee1c7f/',\r\n  },\r\n}"
             },
             {
                 "name": "Subtitle",
@@ -318,7 +338,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    stringList: ['Item 1 example', 'Item 2 example'],\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    list: [\r\n      {\r\n        item: 'Item 1 example',\r\n        subitem:\r\n          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',\r\n      },\r\n      { item: 'Item 2 example' },\r\n    ],\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
             },
             {
                 "name": "WidthFill",
@@ -390,6 +410,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<CardComponent>",
                 "file": "projects/breno-storybook/src/lib/components/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<CollapsibleCardComponent>",
+                "file": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -526,6 +557,28 @@
                     "deprecationMessage": "",
                     "type": "Meta<CardComponent>",
                     "defaultValue": "{\r\n  title: 'Card',\r\n  component: CardComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts": [
+                {
+                    "name": "collapsibleCard",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {},\r\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<CollapsibleCardComponent>",
+                    "defaultValue": "{\r\n  title: 'Collapsible Card Component',\r\n  component: CollapsibleCardComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
                 }
             ],
             "projects/breno-storybook/src/lib/components/button/button.stories.ts": [
@@ -743,7 +796,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    backgroundColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n    label: 'Title example',\r\n    enableCredentialButton: true,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    backgroundColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n    label: 'Reactive Angular course with RxJS',\r\n    enableCredentialButton: true,\r\n    credentialUrl:\r\n      'https://www.udemy.com/certificate/UC-88966ec3-1439-4d77-9b46-6e638fee1c7f/',\r\n  },\r\n}"
                 }
             ],
             "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts": [
@@ -765,7 +818,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    stringList: ['Item 1 example', 'Item 2 example'],\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    list: [\r\n      {\r\n        item: 'Item 1 example',\r\n        subitem:\r\n          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',\r\n      },\r\n      { item: 'Item 2 example' },\r\n    ],\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
                 }
             ],
             "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts": [
@@ -892,6 +945,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<CardComponent>",
                     "file": "projects/breno-storybook/src/lib/components/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<CollapsibleCardComponent>",
+                    "file": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1281,6 +1347,36 @@
             },
             {
                 "filePath": "projects/breno-storybook/src/lib/components/card/card.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "collapsibleCard",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",

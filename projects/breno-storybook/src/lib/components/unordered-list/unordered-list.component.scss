@@ -5,6 +5,21 @@
   font-family: $font-family;
 }
 
+.title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.left-gap {
+  margin-left: 10px;
+}
+
+.left-gap-plus {
+  margin-left: 30px;
+}
+
 .subitem {
   font-size: 20px;
   font-family: $font-family;
@@ -20,4 +35,8 @@ li::marker {
 
 li {
   margin: 10px 0px;
+}
+
+ul {
+  margin-top: 0px;
 }

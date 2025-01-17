@@ -1,0 +1,21 @@
+<div class="card-wrapper">
+  <bsb-stripe
+    [backgroundColor]="stripeColor"
+    [labelColor]="titleTextColor"
+    [label]="cardContent.title"
+    (click)="openCard()"
+  ></bsb-stripe>
+  @if(isCardOpen) {
+  <bsb-unordered-list
+    class="list-content"
+    [color]="textColor"
+    [ngStyle]="{ 'border-left': '1px solid' + stripeColor }"
+    [list]="cardContent.listContent"
+  ></bsb-unordered-list>
+  <bsb-stripe
+    [backgroundColor]="stripeColor"
+    [labelColor]="titleTextColor"
+    [label]="setSkillsString()"
+  ></bsb-stripe>
+  }
+</div>

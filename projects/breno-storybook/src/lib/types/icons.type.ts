@@ -16,4 +16,5 @@ export const Icons = [
   'wrench',
   'plus',
   'keyboard',
+  'globe',
 ];
