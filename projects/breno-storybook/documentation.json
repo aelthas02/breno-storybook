@@ -41,14 +41,24 @@
                 "defaultValue": "(args: any) => ({\r\n  props: args,\r\n  template: `\r\n  <bsb-card [title]=\"'Title example'\" [maxWidth]=\"500\" [isMobile]=\"true\" [isCloseEnabled]=\"false\" >\r\n   <span>Content example</span><br/>\r\n   <span>Content example</span><br/>\r\n   <span>Content example</span>\r\n  </bsb-card>`,\r\n})"
             },
             {
-                "name": "collapsibleCard",
+                "name": "CollapsibleCardGreenClosed",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {},\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    cardContent: {\r\n      title: 'Card title',\r\n      skills: ['Angular', 'TypeScript'],\r\n      listContent: [\r\n        { item: 'Test item 1', subitem: 'Bla bla bla bla' },\r\n        { item: 'Item 2' },\r\n      ],\r\n    },\r\n    stripeColor: ColorsEnum.GREEN,\r\n    textColor: ColorsEnum.BLACK,\r\n    titleTextColor: ColorsEnum.WHITE,\r\n  },\r\n}"
+            },
+            {
+                "name": "CollapsibleCardOpen",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    cardContent: {\r\n      title: 'APOSTA GANHA',\r\n      skills: ['Angular', 'TypeScript'],\r\n      listContent: [\r\n        {\r\n          item: 'SENIOR FRONTEND DEVELOPER - jun 2024 -> present',\r\n          subitem:\r\n            'Experience during a war room of development of a new system in Angular 17 as a product, using Design System, Storybook and Monorepo architecture using Nx.',\r\n        },\r\n        {\r\n          item: 'FRONTEND DEVELOPER - dez 2022 -> jun 2024',\r\n          subitem:\r\n            '• AngularJS development and maintenance of a betting system with several kind of betting options. Cassino and live games such as: Football, volleyball, basketball, casinos, reality shows, politics, minigames etc.',\r\n        },\r\n      ],\r\n    },\r\n    isCardOpen: true,\r\n    stripeColor: ColorsEnum.ORANGE,\r\n    textColor: ColorsEnum.WHITE,\r\n    titleTextColor: ColorsEnum.BLACK,\r\n  },\r\n}"
             },
             {
                 "name": "Disabled",
@@ -341,6 +351,26 @@
                 "defaultValue": "{\r\n  args: {\r\n    list: [\r\n      {\r\n        item: 'Item 1 example',\r\n        subitem:\r\n          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',\r\n      },\r\n      { item: 'Item 2 example' },\r\n    ],\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
             },
             {
+                "name": "UnorderedListWithTitle",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    title: 'Title example',\r\n    titleColor: ColorsEnum.BLACK,\r\n    list: [\r\n      {\r\n        item: 'Item 1 example',\r\n        subitem:\r\n          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',\r\n      },\r\n      { item: 'Item 2 example' },\r\n    ],\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+            },
+            {
+                "name": "UnorderedListWithTitleAndIcon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    title: 'Title example',\r\n    titleColor: ColorsEnum.BLACK,\r\n    titleIcon: 'globe',\r\n    titleIconColor: ColorsEnum.ORANGE,\r\n    list: [\r\n      { item: 'Item 1 example' },\r\n      { item: 'Item 2 example' },\r\n      { item: 'Item 3 example' },\r\n      { item: 'Item 4 example' },\r\n    ],\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+            },
+            {
                 "name": "WidthFill",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -561,14 +591,24 @@
             ],
             "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts": [
                 {
-                    "name": "collapsibleCard",
+                    "name": "CollapsibleCardGreenClosed",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {},\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    cardContent: {\r\n      title: 'Card title',\r\n      skills: ['Angular', 'TypeScript'],\r\n      listContent: [\r\n        { item: 'Test item 1', subitem: 'Bla bla bla bla' },\r\n        { item: 'Item 2' },\r\n      ],\r\n    },\r\n    stripeColor: ColorsEnum.GREEN,\r\n    textColor: ColorsEnum.BLACK,\r\n    titleTextColor: ColorsEnum.WHITE,\r\n  },\r\n}"
+                },
+                {
+                    "name": "CollapsibleCardOpen",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    cardContent: {\r\n      title: 'APOSTA GANHA',\r\n      skills: ['Angular', 'TypeScript'],\r\n      listContent: [\r\n        {\r\n          item: 'SENIOR FRONTEND DEVELOPER - jun 2024 -> present',\r\n          subitem:\r\n            'Experience during a war room of development of a new system in Angular 17 as a product, using Design System, Storybook and Monorepo architecture using Nx.',\r\n        },\r\n        {\r\n          item: 'FRONTEND DEVELOPER - dez 2022 -> jun 2024',\r\n          subitem:\r\n            '• AngularJS development and maintenance of a betting system with several kind of betting options. Cassino and live games such as: Football, volleyball, basketball, casinos, reality shows, politics, minigames etc.',\r\n        },\r\n      ],\r\n    },\r\n    isCardOpen: true,\r\n    stripeColor: ColorsEnum.ORANGE,\r\n    textColor: ColorsEnum.WHITE,\r\n    titleTextColor: ColorsEnum.BLACK,\r\n  },\r\n}"
                 },
                 {
                     "name": "meta",
@@ -819,6 +859,26 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\r\n  args: {\r\n    list: [\r\n      {\r\n        item: 'Item 1 example',\r\n        subitem:\r\n          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',\r\n      },\r\n      { item: 'Item 2 example' },\r\n    ],\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+                },
+                {
+                    "name": "UnorderedListWithTitle",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    title: 'Title example',\r\n    titleColor: ColorsEnum.BLACK,\r\n    list: [\r\n      {\r\n        item: 'Item 1 example',\r\n        subitem:\r\n          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',\r\n      },\r\n      { item: 'Item 2 example' },\r\n    ],\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+                },
+                {
+                    "name": "UnorderedListWithTitleAndIcon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    title: 'Title example',\r\n    titleColor: ColorsEnum.BLACK,\r\n    titleIcon: 'globe',\r\n    titleIconColor: ColorsEnum.ORANGE,\r\n    list: [\r\n      { item: 'Item 1 example' },\r\n      { item: 'Item 2 example' },\r\n      { item: 'Item 3 example' },\r\n      { item: 'Item 4 example' },\r\n    ],\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
                 }
             ],
             "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts": [
@@ -1360,7 +1420,17 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "collapsibleCard",
+                "name": "CollapsibleCardGreenClosed",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/collapsible-card/collapsible-card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CollapsibleCardOpen",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1551,6 +1621,26 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "UnorderedList",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "UnorderedListWithTitle",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "UnorderedListWithTitleAndIcon",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

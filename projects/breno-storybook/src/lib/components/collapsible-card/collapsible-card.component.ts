@@ -1,14 +1,8 @@
 import { NgClass, NgStyle } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { ColorsEnum } from '../../types';
+import { CollapsibleCardContent, ColorsEnum } from '../../types';
 import { StripeComponent } from '../stripe/stripe.component';
 import { UnorderedListComponent } from '../unordered-list/unordered-list.component';
-
-export interface CardContent {
-  title: string;
-  skills?: string[];
-  listContent: { item: string; subitem?: string }[];
-}
 
 @Component({
   selector: 'bsb-collapsible-card',
@@ -18,7 +12,7 @@ export interface CardContent {
   styleUrls: ['./collapsible-card.component.scss'],
 })
 export class CollapsibleCardComponent {
-  @Input() cardContent: CardContent = {
+  @Input() cardContent: CollapsibleCardContent = {
     title: 'Title example',
     skills: ['Angular', 'TypeScript'],
     listContent: [
