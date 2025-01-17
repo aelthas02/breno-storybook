@@ -1,0 +1,15 @@
+@import "../../assets/fonts/fonts.scss";
+
+.stripe-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.label-wrapper {
+  font-family: $font-family;
+  font-size: 28px;
+  font-weight: bold;
+}

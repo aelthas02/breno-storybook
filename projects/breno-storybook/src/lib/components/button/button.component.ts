@@ -1,6 +1,6 @@
 import { NgClass, NgStyle } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { ButtonClass, ButtonSize, ColorsEnum } from '../../types';
+import { ButtonSize, ColorsEnum } from '../../types';
 
 @Component({
   selector: 'bsb-button',
@@ -16,9 +16,7 @@ export class ButtonComponent {
   @Input() size: ButtonSize = 'normal';
   @Input() buttonColor: ColorsEnum = ColorsEnum.ORANGE;
   @Input() labelColor: ColorsEnum = ColorsEnum.WHITE;
-
-  @Output()
-  onClick = new EventEmitter<Event>();
+  @Output() onClick: EventEmitter<Event> = new EventEmitter<Event>();
 
   public click(): void {
     this.onClick.emit();

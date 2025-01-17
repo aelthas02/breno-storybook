@@ -4,6 +4,7 @@
     [ngClass]="size"
     [disabled]="disabled || loading"
     [ngStyle]="{ color: labelColor, background: buttonColor }"
+    (click)="click()"
   >
     @if (loading) {
     <span class="loading"></span>

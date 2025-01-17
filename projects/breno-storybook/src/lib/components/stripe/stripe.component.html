@@ -1,0 +1,13 @@
+<div class="stripe-wrapper" [ngStyle]="{ background: backgroundColor }">
+  <span class="label-wrapper" [ngStyle]="{ color: labelColor }">{{
+    label
+  }}</span>
+  @if(enableCredentialButton) {
+  <bsb-button
+    [label]="'See credential'"
+    [buttonColor]="'#00563E'"
+    [labelColor]="'#FAF0E6'"
+    (onClick)="credentialClick()"
+  ></bsb-button>
+  }
+</div>
