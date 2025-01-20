@@ -21,4 +21,6 @@ export class UnorderedListComponent {
     { item: 'List item 3' },
   ];
   @Input() color: ColorsEnum = ColorsEnum.WHITE;
+
+  public lightGrey: ColorsEnum = ColorsEnum.LIGHT_GREY;
 }

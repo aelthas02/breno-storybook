@@ -18,6 +18,9 @@ export class StripeComponent {
   @Input() enableCredentialButton: boolean = false;
   @Input() credentialUrl: string = '';
 
+  public white: ColorsEnum = ColorsEnum.WHITE;
+  public green: ColorsEnum = ColorsEnum.GREEN;
+
   public credentialClick(): void {
     window.open(this.credentialUrl);
   }

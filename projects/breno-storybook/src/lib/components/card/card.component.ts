@@ -5,6 +5,7 @@ import {
   TextComponent,
   TitleComponent,
 } from '../base-components';
+import { ColorsEnum } from '../../types';
 
 @Component({
   selector: 'bsb-card',
@@ -19,6 +20,8 @@ export class CardComponent {
   @Input() maxWidth: number = 450;
   @Input() isCloseEnabled: boolean = true;
   @Output() closeModal: EventEmitter<Event> = new EventEmitter<Event>();
+
+  public orange: ColorsEnum = ColorsEnum.ORANGE;
 
   public close(): void {
     this.closeModal.emit();

@@ -16,7 +16,7 @@
     }"
     [list]="cardContent.listContent"
   ></bsb-unordered-list>
-  @if(cardContent.skills.length > 0) {
+  @if(cardContent && cardContent.skills.length > 0) {
   <bsb-stripe
     class="skills-stripe"
     [backgroundColor]="stripeColor"

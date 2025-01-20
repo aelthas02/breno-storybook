@@ -17,7 +17,7 @@
   >
     @for(item of list; track $index){
     <li><bsb-text [color]="titleColor" [label]="item.item"></bsb-text></li>
-    <bsb-text [color]="'#696969'" [label]="item.subitem"></bsb-text>
+    <bsb-text [color]="lightGrey" [label]="item.subitem || ''"></bsb-text>
     }
   </ul>
 </div>

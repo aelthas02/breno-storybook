@@ -10,7 +10,7 @@ import { ColorsEnum } from '../../../types';
   styleUrls: ['./text.component.scss'],
 })
 export class TextComponent {
-  @Input() label: string | number = 'Text';
+  @Input() label: string = 'Text';
   @Input() color: ColorsEnum = ColorsEnum.WHITE;
   @Input() fontSize: number = 20;
   @Input() fontWeight: string = '';

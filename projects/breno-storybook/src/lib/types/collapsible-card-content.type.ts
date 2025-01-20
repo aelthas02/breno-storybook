@@ -1,5 +1,5 @@
 export type CollapsibleCardContent = {
   title: string;
-  skills?: string[];
+  skills: string[];
   listContent: { item: string; subitem?: string }[];
 };

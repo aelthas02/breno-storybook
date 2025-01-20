@@ -10,7 +10,7 @@ import { ColorsEnum } from '../../../types';
   styleUrls: ['./title.component.scss'],
 })
 export class TitleComponent {
-  @Input() label: string | number = 'Title';
+  @Input() label: string = 'Title';
   @Input() color: ColorsEnum = ColorsEnum.WHITE;
 
   public firstLetterUnderlineColor: string = ColorsEnum.ORANGE;
