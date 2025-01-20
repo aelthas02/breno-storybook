@@ -30,11 +30,11 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ## Publishing
 
-After building your library with `ng build ngx-apostaganha-ui`, go to the dist folder `cd dist/ngx-apostaganha-ui` and run `npm publish or npm pack`.
+After building your library with `ng build breno-storybook`, go to the dist folder `cd dist/breno-storybook` and run `npm publish or npm pack`.
 
 ## Using the library locally
 
-After running the `npm pack` command, a .tgz file will be generated in the /dist directory. Copy the .tgz file to the root of the project that will be using the library and run `npm i agdev-apostaganha-ngx-apostaganha-ui-x.x.x.tgz`.
+After running the `npm pack` command, a .tgz file will be generated in the /dist directory. Copy the .tgz file to the root of the project that will be using the library and run `npm i breno-storybook-breno-storybook-x.x.x.tgz`.
 
 Import the lib component you want to use into your .component file
 
