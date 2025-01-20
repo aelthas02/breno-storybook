@@ -1,7 +1,7 @@
 @import "../../assets/fonts/fonts.scss";
 
 .unordered-list-wrapper {
-  font-size: 24px;
+  font-size: 20px;
   font-family: $font-family;
 }
 
@@ -10,6 +10,7 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  font-size: 24px;
 }
 
 .left-gap {
@@ -18,12 +19,6 @@
 
 .left-gap-plus {
   margin-left: 30px;
-}
-
-.subitem {
-  font-size: 20px;
-  font-family: $font-family;
-  color: #696969;
 }
 
 li::marker {

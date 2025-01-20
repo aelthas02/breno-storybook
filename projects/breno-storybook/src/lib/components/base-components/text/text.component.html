@@ -1,1 +1,9 @@
-<strong class="text" [ngStyle]="{ color: color }">{{ label }}</strong>
+<span
+  class="text"
+  [ngStyle]="{
+    color: color,
+    'font-size': fontSize + 'px',
+    'font-weight': fontWeight
+  }"
+  >{{ label }}</span
+>

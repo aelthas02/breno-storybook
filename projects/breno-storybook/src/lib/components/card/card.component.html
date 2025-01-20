@@ -1,8 +1,23 @@
-<div class="card-wrapper" [ngStyle]="isMobile ? {'width': '100%'} : {'max-width': maxWidth + 'px'}">
+<div
+  class="card-wrapper"
+  [ngStyle]="isMobile ? { width: '100%' } : { 'max-width': maxWidth + 'px' }"
+>
   <div class="title-wrapper">
-    <span class="title">{{ title }}</span>
+    <bsb-text
+      class="title"
+      [label]="title.toUpperCase()"
+      [color]="ORANGE"
+      [fontWeight]="'bold'"
+      [fontSize]="28"
+    ></bsb-text>
     @if(isCloseEnabled) {
-    <bsb-icon [icon]="'cancel'" (click)="close()" [color]="ORANGE" [size]="'default-xl'" class="icon"></bsb-icon>
+    <bsb-icon
+      [icon]="'cancel'"
+      (click)="close()"
+      [color]="ORANGE"
+      [size]="'default-md'"
+      class="icon"
+    ></bsb-icon>
     }
   </div>
   <div class="line"></div>

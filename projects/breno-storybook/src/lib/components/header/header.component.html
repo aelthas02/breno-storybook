@@ -1,6 +1,13 @@
 <div>
   <div class="header-wrapper">
-    <span class="title" (click)="titleClick()">{{ label }}</span>
+    <bsb-text
+      class="title"
+      (click)="titleClick()"
+      [label]="label.toUpperCase()"
+      [fontWeight]="'bold'"
+      [fontSize]="26"
+      [color]="'#1c1c1c'"
+    ></bsb-text>
     <bsb-icon
       [icon]="isMenuOpen ? 'cancel' : 'menu'"
       [size]="'default-xl'"

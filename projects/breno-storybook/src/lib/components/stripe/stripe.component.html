@@ -1,7 +1,11 @@
 <div class="stripe-wrapper" [ngStyle]="{ background: backgroundColor }">
-  <span class="label-wrapper" [ngStyle]="{ color: labelColor }">{{
-    label
-  }}</span>
+  <bsb-text
+    class="label-wrapper"
+    [color]="labelColor"
+    [label]="label"
+    [fontSize]="28"
+    [fontWeight]="'bold'"
+  ></bsb-text>
   @if(enableCredentialButton) {
   <bsb-button
     [label]="'See credential'"

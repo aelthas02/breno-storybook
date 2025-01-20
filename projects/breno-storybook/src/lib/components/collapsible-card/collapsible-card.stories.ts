@@ -38,11 +38,11 @@ export const CollapsibleCardOpen: Story = {
   },
 };
 
-export const CollapsibleCardGreenClosed: Story = {
+export const CollapsibleCardGreenClosedNoSkills: Story = {
   args: {
     cardContent: {
       title: 'Card title',
-      skills: ['Angular', 'TypeScript'],
+      skills: [],
       listContent: [
         { item: 'Test item 1', subitem: 'Bla bla bla bla' },
         { item: 'Item 2' },

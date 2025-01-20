@@ -1,11 +1,11 @@
 import { NgClass, NgStyle } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { IconComponent } from '../base-components';
+import { IconComponent, TextComponent } from '../base-components';
 
 @Component({
   selector: 'bsb-header',
   standalone: true,
-  imports: [NgStyle, NgClass, IconComponent],
+  imports: [NgStyle, NgClass, IconComponent, TextComponent],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })

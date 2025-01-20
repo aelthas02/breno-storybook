@@ -12,4 +12,6 @@ import { ColorsEnum } from '../../../types';
 export class TextComponent {
   @Input() label: string | number = 'Text';
   @Input() color: ColorsEnum = ColorsEnum.WHITE;
+  @Input() fontSize: number = 20;
+  @Input() fontWeight: string = '';
 }

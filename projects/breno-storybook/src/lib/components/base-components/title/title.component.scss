@@ -10,3 +10,13 @@
   text-decoration-style: solid;
   text-decoration-thickness: 5px;
 }
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 18px !important;
+  }
+
+  .first-letter {
+    text-decoration-thickness: 3px;
+  }
+}

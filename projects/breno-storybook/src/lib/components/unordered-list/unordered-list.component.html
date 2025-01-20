@@ -16,8 +16,8 @@
     "
   >
     @for(item of list; track $index){
-    <li>{{ item.item }}</li>
-    <span class="subitem"> {{ item.subitem }}</span>
+    <li><bsb-text [color]="titleColor" [label]="item.item"></bsb-text></li>
+    <bsb-text [color]="'#696969'" [label]="item.subitem"></bsb-text>
     }
   </ul>
 </div>
