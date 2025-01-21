@@ -30,5 +30,6 @@ export class HeaderComponent {
 
   public optionClick(menuOption: string): void {
     this.click.emit(menuOption);
+    this.isMenuOpen = false;
   }
 }

@@ -1,8 +1,10 @@
 @import "../../assets/fonts/fonts.scss";
 
 .header-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
   height: 70px;
-  width: 100%;
   background-color: #fbbb24;
   display: flex;
   justify-items: center;
@@ -48,4 +50,13 @@
 .menu-option:hover {
   background-color: #1c1c1c;
   color: #faf0e6;
+}
+
+@media (max-width: 700px) {
+  .title {
+    margin-left: 0px;
+  }
+  .open-menu {
+    width: 100%;
+  }
 }
