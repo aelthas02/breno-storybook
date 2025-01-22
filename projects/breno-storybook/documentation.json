@@ -164,21 +164,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/breno-storybook/src/lib/components/stripe/stripe.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<StripeComponent>",
-                "defaultValue": "{\r\n  title: 'Stripe',\r\n  component: StripeComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<HeaderComponent>",
                 "defaultValue": "{\r\n  title: 'Header',\r\n  component: HeaderComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/stripe/stripe.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StripeComponent>",
+                "defaultValue": "{\r\n  title: 'Stripe',\r\n  component: StripeComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
             },
             {
                 "name": "meta",
@@ -471,8 +471,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<StripeComponent>",
-                "file": "projects/breno-storybook/src/lib/components/stripe/stripe.stories.ts",
+                "rawtype": "StoryObj<HeaderComponent>",
+                "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -482,8 +482,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HeaderComponent>",
-                "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
+                "rawtype": "StoryObj<StripeComponent>",
+                "file": "projects/breno-storybook/src/lib/components/stripe/stripe.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1037,19 +1037,6 @@
                     "kind": 183
                 }
             ],
-            "projects/breno-storybook/src/lib/components/stripe/stripe.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<StripeComponent>",
-                    "file": "projects/breno-storybook/src/lib/components/stripe/stripe.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 183
-                }
-            ],
             "projects/breno-storybook/src/lib/components/header/header.stories.ts": [
                 {
                     "name": "Story",
@@ -1057,6 +1044,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HeaderComponent>",
                     "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/stripe/stripe.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<StripeComponent>",
+                    "file": "projects/breno-storybook/src/lib/components/stripe/stripe.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
