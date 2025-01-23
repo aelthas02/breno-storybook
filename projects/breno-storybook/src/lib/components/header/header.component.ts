@@ -12,7 +12,11 @@ import { ColorsEnum } from '../../types';
 })
 export class HeaderComponent {
   @Input() label: string = 'Title';
-  @Input() menuOptions: string[] = ['option 1', 'option 2', 'option example'];
+  @Input() menuOptions: { label: string; route: string }[] = [
+    { label: 'option 1', route: 'string' },
+    { label: 'option 2', route: 'string' },
+    { label: 'option example', route: 'string' },
+  ];
   @Output() click: EventEmitter<string> = new EventEmitter<string>();
   @Output() goHome: EventEmitter<Event> = new EventEmitter<Event>();
 
@@ -28,8 +32,9 @@ export class HeaderComponent {
     this.goHome.emit();
   }
 
-  public optionClick(menuOption: string): void {
-    this.click.emit(menuOption);
+  public optionClick(route: string): void {
+    debugger;
+    this.click.emit(route);
     this.isMenuOpen = false;
   }
 }

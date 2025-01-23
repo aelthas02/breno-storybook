@@ -15,6 +15,10 @@ type Story = StoryObj<HeaderComponent>;
 export const Header: Story = {
   args: {
     label: 'Breno moreira - frontend developer',
-    menuOptions: ['Experiences', 'Skills', 'Formation'],
+    menuOptions: [
+      { label: 'Experiences', route: 'string' },
+      { label: 'Skills / Knowledge', route: 'string' },
+      { label: 'Education', route: 'string' },
+    ],
   },
 };

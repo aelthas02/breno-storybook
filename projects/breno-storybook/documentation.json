@@ -88,7 +88,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    label: 'Breno moreira - frontend developer',\r\n    menuOptions: ['Experiences', 'Skills', 'Formation'],\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Breno moreira - frontend developer',\r\n    menuOptions: [\r\n      { label: 'Experiences', route: 'string' },\r\n      { label: 'Skills / Knowledge', route: 'string' },\r\n      { label: 'Education', route: 'string' },\r\n    ],\r\n  },\r\n}"
             },
             {
                 "name": "Info",
@@ -722,7 +722,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Breno moreira - frontend developer',\r\n    menuOptions: ['Experiences', 'Skills', 'Formation'],\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Breno moreira - frontend developer',\r\n    menuOptions: [\r\n      { label: 'Experiences', route: 'string' },\r\n      { label: 'Skills / Knowledge', route: 'string' },\r\n      { label: 'Education', route: 'string' },\r\n    ],\r\n  },\r\n}"
                 },
                 {
                     "name": "meta",

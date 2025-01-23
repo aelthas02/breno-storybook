@@ -19,8 +19,8 @@
   @if(isMenuOpen) {
   <div class="open-menu">
     @for(menuOption of menuOptions; track $index) {
-    <div class="menu-option" (click)="optionClick(menuOption)">
-      <span>{{ menuOption }}</span>
+    <div class="menu-option" (click)="optionClick(menuOption.route)">
+      <span>{{ menuOption.label }}</span>
     </div>
     }
   </div>
