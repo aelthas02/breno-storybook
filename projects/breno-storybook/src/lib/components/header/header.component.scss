@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
+  gap: 10px;
 }
 
 .title {
@@ -26,7 +27,7 @@
   flex-direction: column;
   width: fit-content;
   right: 0;
-  position: fixed;
+  position: absolute;
 }
 
 .menu-option {

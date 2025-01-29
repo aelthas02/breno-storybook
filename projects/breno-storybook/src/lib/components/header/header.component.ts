@@ -33,7 +33,6 @@ export class HeaderComponent {
   }
 
   public optionClick(route: string): void {
-    debugger;
     this.click.emit(route);
     this.isMenuOpen = false;
   }

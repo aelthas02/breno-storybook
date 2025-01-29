@@ -22,3 +22,40 @@
 .skills-stripe {
   overflow: hidden;
 }
+.list-content-closed {
+  animation: close-card 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.list-content-open {
+  animation: open-card 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes open-card {
+  0% {
+    transform: translateY(-500px) scaleY(1);
+    transform-origin: top;
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+@keyframes close-card {
+  0% {
+    transform: translateY(0) scaleY(1);
+    transform-origin: top;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-500px) scaleY(1);
+    transform-origin: top;
+    opacity: 0;
+    transform: rotateX(90deg);
+    display: none;
+    height: 0px;
+  }
+}
