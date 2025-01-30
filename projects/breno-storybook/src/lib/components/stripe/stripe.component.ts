@@ -18,10 +18,10 @@ export class StripeComponent {
   @Input() enableCredentialButton: boolean = false;
   @Input() credentialUrl: string = '';
   @Input() isCollapsibleIcon: boolean = false;
+  @Input() isOpenCollapsible: boolean = false;
 
   public white: ColorsEnum = ColorsEnum.WHITE;
   public green: ColorsEnum = ColorsEnum.GREEN;
-  public isOpenCollapsible: boolean = false;
 
   public credentialClick(): void {
     window.open(this.credentialUrl);
