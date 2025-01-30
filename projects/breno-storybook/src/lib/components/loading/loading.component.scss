@@ -1,0 +1,43 @@
+@import "../../assets/fonts/fonts.scss";
+
+.spinner {
+  border: solid 1px;
+  border-radius: 3px;
+  animation: rotate 2s infinite linear;
+  position: absolute;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotateX(180deg);
+  }
+  50% {
+    transform: rotate(180);
+  }
+  75% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.inner-spinner {
+  border: solid 1px;
+  border-radius: 100px;
+  border-style: dashed;
+  animation: rotate-center 2s infinite linear;
+  position: absolute;
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,19 @@
+<div
+  class="spinner"
+  [ngStyle]="{
+    'border-color': color,
+    width: size === 'md' ? '30px' : '40px',
+    height: size === 'md' ? '30px' : '40px'
+  }"
+></div>
+
+<div
+  class="inner-spinner"
+  [ngStyle]="{
+    width: size === 'md' ? '15px' : '22px',
+    height: size === 'md' ? '15px' : '22px',
+    'border-color': color,
+    'margin-top': size === 'md' ? '7px' : '9px',
+    'margin-left': size === 'md' ? '7px' : '9px'
+  }"
+></div>

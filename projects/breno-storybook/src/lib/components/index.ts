@@ -5,4 +5,5 @@ export * from './custom-image/custom-image.component';
 export * from './card/card.component';
 export * from './stripe/stripe.component';
 export * from './collapsible-card/collapsible-card.component';
+export * from './loading/loading.component';
 export * from './base-components/index';
