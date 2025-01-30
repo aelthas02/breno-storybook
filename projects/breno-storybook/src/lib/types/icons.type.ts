@@ -17,4 +17,5 @@ export const Icons = [
   'plus',
   'keyboard',
   'globe',
+  'down-open',
 ];

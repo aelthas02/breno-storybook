@@ -31,3 +31,12 @@ export const StripeWithCredentialButton: Story = {
       'https://www.udemy.com/certificate/UC-88966ec3-1439-4d77-9b46-6e638fee1c7f/',
   },
 };
+
+export const StripeWithCollapsibleIcon: Story = {
+  args: {
+    backgroundColor: ColorsEnum.ORANGE,
+    labelColor: ColorsEnum.BLACK,
+    label: 'Reactive Angular course with RxJS',
+    isCollapsibleIcon: true,
+  },
+};

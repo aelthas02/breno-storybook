@@ -10,3 +10,29 @@
 .certificate-btn {
   min-width: 143px;
 }
+
+.openCollapsible {
+  animation: openCollapsible 0.3s forwards linear;
+}
+
+.closeCollapsible {
+  animation: closeCollapsible 0.3s forwards linear;
+}
+
+@keyframes openCollapsible {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes closeCollapsible {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
