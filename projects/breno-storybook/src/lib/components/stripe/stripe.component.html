@@ -10,8 +10,8 @@
     class="label-wrapper"
     [color]="labelColor"
     [label]="label"
-    [fontSize]="28"
-    [fontWeight]="'bold'"
+    [fontSize]="isTitle ? 28 : 20"
+    [fontWeight]="isTitle ? 'bold' : 'regular'"
   ></bsb-text>
   @if(enableCredentialButton) {
   <bsb-button

@@ -2,7 +2,11 @@
   @if(title) {
   <div class="title-wrapper">
     <bsb-icon [icon]="titleIcon" [color]="titleIconColor"></bsb-icon>
-    <bsb-text [label]="title" [color]="titleColor"></bsb-text>
+    <bsb-text
+      [label]="title"
+      [color]="titleColor"
+      [fontWeight]="'bold'"
+    ></bsb-text>
   </div>
 
   }

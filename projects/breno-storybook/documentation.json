@@ -174,16 +174,6 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<HeaderComponent>",
-                "defaultValue": "{\r\n  title: 'Header',\r\n  component: HeaderComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -194,11 +184,11 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/breno-storybook/src/lib/components/loading/loading.stories.ts",
+                "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<LoadingComponent>",
-                "defaultValue": "{\r\n  title: 'Loading',\r\n  component: LoadingComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+                "type": "Meta<HeaderComponent>",
+                "defaultValue": "{\r\n  title: 'Header',\r\n  component: HeaderComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
             },
             {
                 "name": "meta",
@@ -214,6 +204,16 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/loading/loading.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<LoadingComponent>",
+                "defaultValue": "{\r\n  title: 'Loading',\r\n  component: LoadingComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -224,21 +224,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<TextComponent>",
-                "defaultValue": "{\r\n  title: 'Text',\r\n  component: TextComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {\r\n    label: 'Text example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<SubtitleComponent>",
                 "defaultValue": "{\r\n  title: 'Subtitle',\r\n  component: SubtitleComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {},\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<TextComponent>",
+                "defaultValue": "{\r\n  title: 'Text',\r\n  component: TextComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {\r\n    label: 'Text example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
             },
             {
                 "name": "meta",
@@ -319,6 +319,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\r\n  args: {\r\n    backgroundColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n    label: 'Title example',\r\n  },\r\n}"
+            },
+            {
+                "name": "StripeWithCollapsibleIcon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/breno-storybook/src/lib/components/stripe/stripe.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    backgroundColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n    label: 'Reactive Angular course with RxJS',\r\n    isCollapsibleIcon: true,\r\n  },\r\n}"
             },
             {
                 "name": "StripeWithCredentialButton",
@@ -490,17 +500,6 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HeaderComponent>",
-                "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 183
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
                 "rawtype": "StoryObj<CustomImageComponent>",
                 "file": "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts",
                 "deprecated": false,
@@ -512,8 +511,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<LoadingComponent>",
-                "file": "projects/breno-storybook/src/lib/components/loading/loading.stories.ts",
+                "rawtype": "StoryObj<HeaderComponent>",
+                "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -534,6 +533,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<LoadingComponent>",
+                "file": "projects/breno-storybook/src/lib/components/loading/loading.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<UnorderedListComponent>",
                 "file": "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts",
                 "deprecated": false,
@@ -545,8 +555,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<TextComponent>",
-                "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
+                "rawtype": "StoryObj<SubtitleComponent>",
+                "file": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -556,8 +566,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<SubtitleComponent>",
-                "file": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
+                "rawtype": "StoryObj<TextComponent>",
+                "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -902,6 +912,16 @@
                     "defaultValue": "{\r\n  args: {\r\n    backgroundColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n    label: 'Title example',\r\n  },\r\n}"
                 },
                 {
+                    "name": "StripeWithCollapsibleIcon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/stripe/stripe.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    backgroundColor: ColorsEnum.ORANGE,\r\n    labelColor: ColorsEnum.BLACK,\r\n    label: 'Reactive Angular course with RxJS',\r\n    isCollapsibleIcon: true,\r\n  },\r\n}"
+                },
+                {
                     "name": "StripeWithCredentialButton",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -954,28 +974,6 @@
                     "defaultValue": "{\r\n  args: {\r\n    title: 'Title example',\r\n    titleColor: ColorsEnum.BLACK,\r\n    titleIcon: 'globe',\r\n    titleIconColor: ColorsEnum.ORANGE,\r\n    list: [\r\n      { item: 'Item 1 example' },\r\n      { item: 'Item 2 example' },\r\n      { item: 'Item 3 example' },\r\n      {\r\n        item: 'Item 4 example',\r\n        subitem:\r\n          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',\r\n      },\r\n    ],\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
                 }
             ],
-            "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts": [
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<TextComponent>",
-                    "defaultValue": "{\r\n  title: 'Text',\r\n  component: TextComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {\r\n    label: 'Text example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
-                },
-                {
-                    "name": "Text",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    label: 'Text example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
-                }
-            ],
             "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts": [
                 {
                     "name": "meta",
@@ -996,6 +994,28 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\r\n  args: {\r\n    label: 'Subtitle example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<TextComponent>",
+                    "defaultValue": "{\r\n  title: 'Text',\r\n  component: TextComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {},\r\n  args: {\r\n    label: 'Text example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
+                },
+                {
+                    "name": "Text",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Text example',\r\n    color: ColorsEnum.BLACK,\r\n  },\r\n}"
                 }
             ],
             "projects/breno-storybook/src/lib/components/base-components/title/title.stories.ts": [
@@ -1097,19 +1117,6 @@
                     "kind": 183
                 }
             ],
-            "projects/breno-storybook/src/lib/components/header/header.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<HeaderComponent>",
-                    "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 183
-                }
-            ],
             "projects/breno-storybook/src/lib/components/custom-image/custom-image.stories.ts": [
                 {
                     "name": "Story",
@@ -1123,13 +1130,13 @@
                     "kind": 183
                 }
             ],
-            "projects/breno-storybook/src/lib/components/loading/loading.stories.ts": [
+            "projects/breno-storybook/src/lib/components/header/header.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<LoadingComponent>",
-                    "file": "projects/breno-storybook/src/lib/components/loading/loading.stories.ts",
+                    "rawtype": "StoryObj<HeaderComponent>",
+                    "file": "projects/breno-storybook/src/lib/components/header/header.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1149,6 +1156,19 @@
                     "kind": 183
                 }
             ],
+            "projects/breno-storybook/src/lib/components/loading/loading.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<LoadingComponent>",
+                    "file": "projects/breno-storybook/src/lib/components/loading/loading.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
             "projects/breno-storybook/src/lib/components/unordered-list/unordered-list.stories.ts": [
                 {
                     "name": "Story",
@@ -1162,19 +1182,6 @@
                     "kind": 183
                 }
             ],
-            "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<TextComponent>",
-                    "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 183
-                }
-            ],
             "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts": [
                 {
                     "name": "Story",
@@ -1182,6 +1189,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<SubtitleComponent>",
                     "file": "projects/breno-storybook/src/lib/components/base-components/subtitle/subtitle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<TextComponent>",
+                    "file": "projects/breno-storybook/src/lib/components/base-components/text/text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1707,6 +1727,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Stripe",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/breno-storybook/src/lib/components/stripe/stripe.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "StripeWithCollapsibleIcon",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

@@ -15,6 +15,7 @@ export class StripeComponent {
   @Input() backgroundColor: ColorsEnum = ColorsEnum.ORANGE;
   @Input() labelColor: ColorsEnum = ColorsEnum.BLACK;
   @Input() label: string = 'Title';
+  @Input() isTitle: boolean = true;
   @Input() enableCredentialButton: boolean = false;
   @Input() credentialUrl: string = '';
   @Input() isCollapsibleIcon: boolean = false;
