@@ -10,7 +10,7 @@
     "storybook": "ng run breno-storybook:storybook",
     "build-storybook": "ng run breno-storybook:build-storybook"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^19.0.0",
     "@angular/common": "^19.0.0",

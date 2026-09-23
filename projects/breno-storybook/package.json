@@ -1,6 +1,6 @@
 {
-  "name": "breno-storybook",
-  "version": "1.0.23",
+  "name": "breno-cv-storybook",
+  "version": "1.0.24",
   "peerDependencies": {
     "@angular/common": "^19.0.0",
     "@angular/core": "^19.0.0"
